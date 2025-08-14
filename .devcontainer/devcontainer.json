@@ -7,11 +7,21 @@
       "HUGO_VERSION": "0.136.5"
     }
   },
+
+  // Cache the Go module store so "hugo mod" is faster across rebuilds
+  "mounts": [
+    "type=cache,target=/go/pkg/mod"
+  ],
+
   "forwardPorts": [1313],
-  "postCreateCommand": "hugo version && node --version && npm --version",
+
+  // Verify installs and refresh modules on first start
+  "postCreateCommand": "hugo version && go version && node --version && npm --version && hugo mod get -u",
+
   "settings": {
     "terminal.integrated.defaultProfile.linux": "bash"
   },
+
   "customizations": {
     "vscode": {
       "extensions": [
@@ -24,6 +34,7 @@
       ]
     }
   },
+
   "remoteEnv": {
     // Helps Hugo live reload work nicely in Codespaces
     "HUGO_BIND": "0.0.0.0"

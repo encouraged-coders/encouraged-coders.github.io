@@ -4,11 +4,12 @@ FROM mcr.microsoft.com/devcontainers/base:ubuntu-24.04
 # Args can be overridden by devcontainer.json > build.args
 ARG HUGO_VERSION="0.136.5"
 
-# Install prerequisites
+# Install prerequisites + Go (needed for Hugo Modules)
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-      ca-certificates curl jq git unzip gnupg && \
-    rm -rf /var/lib/apt/lists/*
+      ca-certificates curl jq git unzip gnupg \
+      golang-go \
+    && rm -rf /var/lib/apt/lists/*
 
 # --- Install Node.js LTS (for PostCSS pipelines used by many Hugo themes) ---
 # Lightweight install via NodeSource (pinned to current LTS 18/20 as you prefer)
@@ -31,5 +32,5 @@ RUN set -eux; \
     DEBIAN_FRONTEND=noninteractive apt-get install -y "/tmp/${DEB}" && \
     rm -rf /var/lib/apt/lists/* "/tmp/${DEB}"
 
-# Verify "extended" build is present at build time
-RUN hugo version | grep -i extended
+# Verify installs at build time
+RUN hugo version | grep -i extended && go version
