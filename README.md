@@ -115,7 +115,7 @@ Rollen u. a.: Architektur, Product Ownership, UI/UX, ScrumMaster, CI/CD.
 
 ---
 
-## Rechtliches & Abgrenzung zum Hauptarbeitgeber VITRONIC
+## Rechtliches & Abgrenzung zum Hauptarbeitgeber
 
 - Keine Tätigkeit in inhaltlichem/wirtschaftlichem Wettbewerb zum Hauptarbeitgeber (<https://vitronic.com>)  
 - Einhaltung Arbeitszeitgesetze; Nutzung eigener Ressourcen
