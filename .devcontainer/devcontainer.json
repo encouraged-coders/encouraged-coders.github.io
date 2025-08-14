@@ -1,0 +1,28 @@
+{
+  "name": "hugo-extended",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      // Pin the exact Hugo EXTENDED version you want
+      "HUGO_VERSION": "0.136.5"
+    }
+  },
+  "forwardPorts": [1313],
+  "postCreateCommand": "hugo version && node --version && npm --version",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "budparr.language-hugo-vscode",
+        "esbenp.prettier-vscode",
+        "streetsidesoftware.code-spell-checker"
+      ]
+    }
+  },
+  "remoteEnv": {
+    // Helps Hugo live reload work nicely in Codespaces
+    "HUGO_BIND": "0.0.0.0"
+  }
+}
