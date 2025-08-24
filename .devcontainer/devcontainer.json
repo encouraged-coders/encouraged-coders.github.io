@@ -4,23 +4,14 @@
     "dockerfile": "Dockerfile",
     "args": {
       // Pin the exact Hugo EXTENDED version you want
-      "HUGO_VERSION": "0.136.5"
+      "HUGO_VERSION": "0.148.2"
     }
   },
-
-  // Cache the Go module store so "hugo mod" is faster across rebuilds
-  "mounts": [
-    "type=cache,target=/go/pkg/mod"
-  ],
 
   "forwardPorts": [1313],
 
   // Verify installs and refresh modules on first start
   "postCreateCommand": "hugo version && go version && node --version && npm --version && hugo mod get -u",
-
-  "settings": {
-    "terminal.integrated.defaultProfile.linux": "bash"
-  },
 
   "customizations": {
     "vscode": {

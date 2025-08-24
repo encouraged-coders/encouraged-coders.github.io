@@ -1,4 +1,4 @@
-module github.com/mann-wahrenberg/mann-wahrenberg.github.io
+module github.com/encouraged-coders/encouraged-coders.github.io
 
 go 1.22.2
 

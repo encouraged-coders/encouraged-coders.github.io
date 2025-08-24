@@ -2,7 +2,7 @@
 FROM mcr.microsoft.com/devcontainers/base:ubuntu-24.04
 
 # Args can be overridden by devcontainer.json > build.args
-ARG HUGO_VERSION="0.136.5"
+ARG HUGO_VERSION="0.148.2"
 
 # Install prerequisites + Go (needed for Hugo Modules)
 RUN apt-get update && \
