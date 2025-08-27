@@ -1,13 +1,9 @@
 ---
 # Banner
 banner:
-  title: "The Ultimate Starter Template You Need To Start Your Hugo Project"
-  content: "Hugoplate is a free starter template built with Hugo and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time."
+  title: "Collaborative engineering through Docs-as-Code"
+  content: "enCouraged Coders strive to bring the successful practices of the open-source community into corporate environments, fostering solid systems and software engineering for software-intensive product lines."
   image: "/images/banner.png"
-  button:
-    enable: true
-    label: "Get Started For Free"
-    link: "https://github.com/zeon-studio/hugoplate"
 
 # Features
 features:
