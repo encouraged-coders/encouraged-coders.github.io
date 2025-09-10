@@ -1,7 +1,7 @@
 ---
 # Banner
 banner:
-  title: "Collaborative engineering through Docs-as-Code"
+  title: "Collaborative Software & Systems Engineering"
   content: "enCouraged Coders strive to bring the successful practices of the open-source community into corporate environments, fostering solid systems and software engineering for software-intensive product lines."
   image: "/images/banner.png"
 
