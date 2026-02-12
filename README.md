@@ -1,4 +1,4 @@
-# Encouraged Coders
+# enCouraged Coders
 
 Collaborative Software & Systems Engineering
 
