@@ -1,0 +1,16 @@
+{
+    "search.useIgnoreFiles": true,
+
+    "editor.codeActionsOnSave": {
+        "source.fixAll.markdownlint": "always"
+    },
+
+    "[markdown]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true
+    },
+
+    "markdownlint.config": {
+        "MD036": false,
+    }
+}
