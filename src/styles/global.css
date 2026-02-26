@@ -1,2 +1,7 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+
+@theme {
+  --color-myst-orange: #F37726;
+  --color-myst-dark:   #2B2A2D;
+}
