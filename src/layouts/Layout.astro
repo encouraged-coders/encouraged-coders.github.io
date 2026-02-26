@@ -4,12 +4,19 @@ import '../styles/global.css';
 interface Props {
   title?: string;
   description?: string;
+  activeTab?: 'services' | 'imprint';
 }
 
 const {
   title = 'enCouraged Coders',
   description = 'Coaching, training, and hands-on workshops around Software and Systems Engineering—practical, collaborative, and tailored to your context.',
+  activeTab,
 } = Astro.props;
+
+const tabs = [
+  { id: 'services', label: 'Services', href: '/' },
+  { id: 'imprint',  label: 'Imprint',  href: '/imprint' },
+];
 ---
 
 <!doctype html>
@@ -22,6 +29,33 @@ const {
     <title>{title}</title>
   </head>
   <body class="bg-white text-slate-900 antialiased">
+
+    {/* ─── Hero (optional, provided per-page) ─────────────────── */}
+    <slot name="hero" />
+
+    {/* ─── Tab nav ─────────────────────────────────────────────── */}
+    <nav class="bg-myst-dark">
+      <div class="mx-auto max-w-5xl px-6">
+        <ul class="flex gap-1" role="tablist">
+          {tabs.map((tab) => (
+            <li role="presentation">
+              <a
+                href={tab.href}
+                role="tab"
+                aria-selected={activeTab === tab.id}
+                class={activeTab === tab.id
+                  ? 'inline-block px-5 py-3 text-sm font-semibold text-white border-b-2 border-myst-orange'
+                  : 'inline-block px-5 py-3 text-sm font-medium text-slate-400 hover:text-white transition-colors'
+                }
+              >
+                {tab.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
+
     <slot />
     <footer class="mt-16 border-t-4 border-myst-orange bg-myst-dark py-8 text-center text-sm text-slate-400">
       &copy; {new Date().getFullYear()} enCouraged Coders &middot; encouraged-coders.de

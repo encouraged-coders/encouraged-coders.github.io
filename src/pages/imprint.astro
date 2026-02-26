@@ -1,11 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Content, frontmatter } from '../content/site.md';
+import { Content } from '../content/imprint.md';
+import { frontmatter } from '../content/site.md';
 ---
 
-<Layout title={frontmatter.title} description={frontmatter.description} activeTab="services">
+<Layout title="Imprint – enCouraged Coders" activeTab="imprint">
 
-  {/* ─── Hero ─────────────────────────────────────────────────── */}
   <section slot="hero" class="bg-slate-100">
     <div class="mx-auto max-w-5xl px-6 py-24 sm:py-32">
       <h1 class="text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
@@ -26,14 +26,14 @@ import { Content, frontmatter } from '../content/site.md';
     </div>
   </section>
 
-  {/* ─── Main content from src/content/site.md ─────────────────── */}
   <main class="mx-auto max-w-4xl px-6 py-16 sm:py-20">
     <div class="prose prose-slate prose-lg max-w-none
       prose-headings:font-bold prose-headings:tracking-tight
+      prose-h1:text-3xl prose-h1:text-slate-900
       prose-h2:mt-12 prose-h2:text-2xl prose-h2:text-slate-900 prose-h2:border-b prose-h2:border-slate-200 prose-h2:pb-3
       prose-h3:mt-6 prose-h3:text-base prose-h3:uppercase prose-h3:tracking-wider prose-h3:text-slate-500
       prose-a:text-blue-800 hover:prose-a:text-blue-900
-      prose-li:marker:text-myst-orange">
+      prose-code:before:content-none prose-code:after:content-none">
       <Content />
     </div>
   </main>

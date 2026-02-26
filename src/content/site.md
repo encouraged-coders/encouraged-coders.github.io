@@ -1,5 +1,5 @@
 ---
-title: en{Courage}d Coder/s
+title: enCouraged Coders
 tagline: Collaborative Software & Systems Engineering
 description: Coaching, training, and hands-on workshops around Software and Systems Engineering—practical, collaborative, and tailored to your context.
 linkedin: https://www.linkedin.com/in/mann-wahrenberg/
