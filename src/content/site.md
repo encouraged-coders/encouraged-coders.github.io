@@ -40,7 +40,7 @@ Depending on your environment, I can work with and integrate into tool stacks su
 
 - git
 - Visual Studio Code
-- Markdown, MyST, Sphinx, HermesBaby, Hugo, Astra, ...
+- Markdown, MyST, Sphinx, HermesBaby, Hugo, Astro, ...
 - Atlassian (Jira, Bitbucket Server/Cloud)
 - GitHub (Open Source, Pro, Team, Enterprise)
 - Microsoft 365 (Teams, SharePoint, …)
