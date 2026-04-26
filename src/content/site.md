@@ -12,7 +12,7 @@ I offer coaching, training, and hands-on workshops around **Software and Systems
 ### My clients
 
 - Individuals or engineering teams
-- Small to mid-sized companies and startups (Germany-based)
+- Small to mid-sized companies and startups (EU-based)
 - Building mechatronic systems/products with a high software share
 
 ### How I can help
